@@ -5,6 +5,6 @@
   title: 'Web Share Api',
   text: 'Hello World',
   url: 'https://developer.mozilla.org',
- }); // share the URL of MDN
+ }).then(_ => console.log('success')).catch(error => console.log('failed', error))
 </script>
 </body></html>
