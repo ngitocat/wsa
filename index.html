@@ -1,10 +1,11 @@
 <!DOCTYPE>
 <html><meta charset="utf-8"><body>
 <script>
- navigator.share({
+ document.addEventListener('click', event => navigator.share({
   title: 'Web Share Api',
   text: 'Hello World',
   url: 'https://developer.mozilla.org',
  }).then(_ => console.log('success')).catch(error => console.log('failed', error))
+ )
 </script>
 </body></html>
